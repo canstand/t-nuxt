@@ -10,11 +10,14 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt',
   ],
 
+  features: {
+    inlineStyles: false,
+  },
+
   experimental: {
     // when using generate, payload js assets included in sw precache manifest
     // but missing on offline, disabling extraction it until fixed
     payloadExtraction: false,
-    inlineSSRStyles: false,
     renderJsonPayloads: true,
     typedPages: true,
   },
