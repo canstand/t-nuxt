@@ -20,10 +20,10 @@ body,
   height: 100vh;
   margin: 0;
   padding: 0;
+  --uno: text-gray-12;
 }
 
 html.dark {
-  background: #222;
-  color: white;
+  --uno: bg-gray-2;
 }
 </style>
