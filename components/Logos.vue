@@ -5,7 +5,7 @@
       <span mt--2 text-green9>Nuxt 3</span>
     </div>
     <div
-      text="3xl accent4"
+      text="3xl gray4"
       m="x-4 y-auto"
       i-carbon-add transform transition-all-500 hover:rotate-135
     />

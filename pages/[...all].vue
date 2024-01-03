@@ -3,7 +3,7 @@ const router = useRouter()
 </script>
 
 <template>
-  <main p="x4 y10" text="center primary-11 dark:accent-11">
+  <main p="x4 y10" text="center accent11 dark:gray-11">
     <div text-4xl>
       <div i-carbon-warning inline-block />
     </div>
