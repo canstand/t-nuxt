@@ -9,10 +9,16 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
     'radix-vue/nuxt',
+    'nuxt-module-eslint-config',
   ],
 
   features: {
+    // For UnoCSS
     inlineStyles: false,
+  },
+
+  eslintConfig: {
+    setup: false,
   },
 
   experimental: {
