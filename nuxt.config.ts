@@ -8,18 +8,9 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
+    '@nuxt/eslint',
     'radix-vue/nuxt',
-    'nuxt-module-eslint-config',
   ],
-
-  features: {
-    // For UnoCSS
-    inlineStyles: false,
-  },
-
-  eslintConfig: {
-    setup: false,
-  },
 
   experimental: {
     // when using generate, payload js assets included in sw precache manifest
@@ -62,6 +53,8 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: appDescription },
         { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
+        { name: 'theme-color', media: '(prefers-color-scheme: light)', content: 'white' },
+        { name: 'theme-color', media: '(prefers-color-scheme: dark)', content: '#222222' },
       ],
     },
   },
@@ -70,5 +63,16 @@ export default defineNuxtConfig({
 
   devtools: {
     enabled: true,
+  },
+
+  features: {
+    // For UnoCSS
+    inlineStyles: false,
+  },
+
+  eslint: {
+    config: {
+      standalone: false,
+    },
   },
 })
