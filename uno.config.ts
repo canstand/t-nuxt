@@ -10,10 +10,10 @@ import {
 } from 'unocss'
 import { presetRadix } from 'unocss-preset-radix'
 
-function handleMatchNumber(v: string, defaultVal = '0') {
+function handleMatchNumber(v?: string, defaultVal = '0') {
   return h.bracket.cssvar.global.auto.fraction.number(v || defaultVal)?.toString().replace('%', '')
 }
-const handleMatchRem = (v: string, defaultVal = 'full') => h.bracket.cssvar.global.auto.fraction.rem(v || defaultVal)
+const handleMatchRem = (v?: string, defaultVal = 'full') => h.bracket.cssvar.global.auto.fraction.rem(v || defaultVal)
 
 export default defineConfig({
   preflights: [

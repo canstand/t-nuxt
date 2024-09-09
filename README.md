@@ -1,1 +1,1 @@
-Modified from <a href="https://github.com/antfu/vitesse-nuxt3">Vitesse for Nuxt 3</a>, nothing special.
+Modified from <a href="https://github.com/antfu/vitesse-nuxt">Vitesse for Nuxt</a>, nothing special.
