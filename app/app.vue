@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ConfigProvider } from 'radix-vue'
 import { appName } from '~/constants'
 
 useHead({
@@ -7,10 +8,12 @@ useHead({
 </script>
 
 <template>
-  <VitePwaManifest />
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+  <ConfigProvider>
+    <VitePwaManifest />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </ConfigProvider>
 </template>
 
 <style>

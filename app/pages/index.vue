@@ -7,7 +7,7 @@ const online = useOnline()
 </script>
 
 <template>
-  <div>
+  <div class="text-center">
     <Logos mb-6 />
     <ClientOnly>
       <Suspense>

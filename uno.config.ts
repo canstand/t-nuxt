@@ -85,10 +85,14 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetRadix({
-      palette: ['indigo', 'slate', 'green', 'purple'],
+      palette: ['indigo', 'slate', 'gray', 'mint', 'ruby', 'amber', 'sky', 'green', 'purple'],
       aliases: {
         accent: 'indigo',
         gray: 'slate',
+        error: 'ruby',
+        success: 'mint',
+        warning: 'amber',
+        info: 'sky',
       },
       darkSelector: '.dark',
       extend: false,
